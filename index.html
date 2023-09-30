@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniDate UTTT</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="./manifest.json">
+    <script>
+        if("serviceWorker" in navigator)
+        {
+            navigator.serviceWorker.register("sw.js")
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>UniDate UTTT</h1>
+    </header>
+
+    <main>
+        <section class="profile">
+            <img src="img/perfil2.jpeg" alt="Foto de perfi2">
+            <h2>Edgar Eduardo Barreto Benitez</h2>
+            <p>Universidad: Universidad Tecnológica de Tula-Tepeji</p>
+            <p>Edad: 21 años</p>
+            <p>Descripción: Me gusta bailar, cantar y pasar mucho tiempo con mis animales
+                y tambien me gusta nadar y estar con mi familia.
+            </p>
+            <button class="like-button">Me gusta</button>
+            <button class="dislike-button">No me gusta</button>
+        </section>
+
+        <section class="potential-matches">
+            <h2>Posibles Coincidencias</h2>
+            <!-- Lista de perfiles de otros usuarios -->
+            <div class="profile-card">
+                <img src="img/perfil1.jpeg" alt="Foto de perfil 1">
+                <h3><a class="sin" href="perfil2.html">Jurgen Jair Mejia Perez</a></h3>
+                <p>Universidad: Universidad Tecnológica de Tula-Tepeji</p>
+                <button class="like-button">Me gusta</button>
+                <button class="dislike-button">No me gusta</button>
+            </div>
+            <div class="profile-card">
+                <img src="img/perfil4.jpeg" alt="Foto de perfil 4">
+                <h3><a class="sin" href="perfil4.html">Jair Lopez Palma </a></h3>
+                <p>Universidad: Universidad Tecnológica de Tula-Tepeji</p>
+                <button class="like-button">Me gusta</button>
+                <button class="dislike-button">No me gusta</button>
+            </div>
+            <div class="profile-card">
+                <img src="img/perfil3.jpeg" alt="Foto de perfil 1">
+                <h3><a class="sin" href="perfil3.html">Carolina Lechuga Martinez</a></h3>
+                <p>Universidad: Universidad Tecnológica de Tula-Tepeji</p>
+                <button class="like-button">Me gusta</button>
+                <button class="dislike-button">No me gusta</button>
+            </div>
+            
+            <!-- Agregar más perfiles aquí -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Citas Universitarias</p>
+    </footer>
+</body>
+</html>
